@@ -7,8 +7,10 @@ dos2unix <script ismi>
 chmod +x <script ismi>
 ./<script ismi>
 ```
-Not: Script içerisinde yazan kodlar aktif olarak çalışmaktadır.  Bu kodların doğuracağı sonuçlardan yalnızca kullanıcı sorumludur.  
+## Not: Script içerisinde yazan kodlar aktif olarak çalışmaktadır.  Bu kodların doğuracağı sonuçlardan yalnızca kullanıcı sorumludur.  
 
-#Demeter.sh (Linux çekirdeğine sahip işletim sistemleri için Disk Ekleme)
+# Demeter.sh (Linux çekirdeğine sahip işletim sistemleri için Disk Ekleme)
 
 Demeter.sh, Virtual Machine veya fiziksel makineler için oluşturmuş olduğum disk eklemeyi kapsar. Dışarıdan bir disk eklemek istediğinizde sadece diskin yolunu belirtmeniz gereklidir. (sda sdb sdc vs.) Daha sonrasında bağlamak istediğiniz klasörün ismini belirterek kolaylıkla diski tanımlayabilirsiniz.
+
+## Not: Script içerisinde yazan kodlar aktif olarak çalışmaktadır.  Bu kodların doğuracağı sonuçlardan yalnızca kullanıcı sorumludur.  
