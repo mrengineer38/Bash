@@ -30,4 +30,20 @@ sleep 5;
 mkdir -p /mnt/$directoryName
 mount -t ext4 /dev/$diskName /mnt/$directoryName
 df
+touch uuid.txt
+touch uuid2.txt
+touch endUuid.txt
+ls -l /dev/disk/by-uuid/ > uuid.txt
+grep $diskName uuid.txt > uuid2.txt
+cat uuid2.txt | awk '{print $9}' > endUuid.txt
+cat endUuid.txt
 
+echo $directoryName
+echo endUuid > check.txt
+#echo -n "UUID=" > deneme4.txt | cat endUuid.txt |  | tee -a deneme4.txt 
+echo -n "UUID=" > check.txt | cat endUuid.txt | tee -a check.txt 
+echo -n ""  /mnt/$directoryName auto rw,user,auto 0 0 >> check.txt | tee -a check.txt
+awk 1 ORS='' check.txt > check.csv
+cat check.csv > check.txt
+
+cat check.txt | tee -a /etc/fstab 
