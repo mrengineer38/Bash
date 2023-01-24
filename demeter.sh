@@ -40,10 +40,17 @@ cat endUuid.txt
 
 echo $directoryName
 echo endUuid > check.txt
-#echo -n "UUID=" > deneme4.txt | cat endUuid.txt |  | tee -a deneme4.txt 
 echo -n "UUID=" > check.txt | cat endUuid.txt | tee -a check.txt 
 echo -n ""  /mnt/$directoryName auto rw,user,auto 0 0 >> check.txt | tee -a check.txt
 awk 1 ORS='' check.txt > check.csv
 cat check.csv > check.txt
 
 cat check.txt | tee -a /etc/fstab 
+
+rm uuid.txt
+rm uuid2.txt
+rm endUuid.txt
+rm check.csv
+rm check.txt
+rm endUuid.txt
+
