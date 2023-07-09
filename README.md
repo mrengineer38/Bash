@@ -14,3 +14,8 @@ chmod +x <script ismi>
 Demeter.sh, Virtual Machine veya fiziksel makineler için oluşturmuş olduğum disk eklemeyi kapsar. Dışarıdan bir disk eklemek istediğinizde sadece diskin yolunu belirtmeniz gereklidir. (sda sdb sdc vs.) Daha sonrasında bağlamak istediğiniz klasörün ismini belirterek kolaylıkla diski tanımlayabilirsiniz.
 
 ## Not: Script içerisinde yazan kodlar aktif olarak çalışmaktadır.  Bu kodların doğuracağı sonuçlardan yalnızca kullanıcı sorumludur.  
+
+#Disk Adding With GUI
+
+Bu script ile birlikte GUI tarafında hızlıca sudo hesabınıza erişim vererek dışarıdan diski ekleyebilirsiniz. 
+
